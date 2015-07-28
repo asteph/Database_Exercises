@@ -18,4 +18,4 @@ SELECT '------------------------------' AS 'Sold less than 20 million';
 SELECT name FROM albums WHERE sales < 20;
 SELECT '------------------------------' AS '';
 SELECT '------------------------------' AS 'Rock genre';
-SELECT name FROM albums WHERE genre = 'rock';
+SELECT name FROM albums WHERE LOCATE('rock', genre) != 0;
