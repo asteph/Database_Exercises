@@ -11,6 +11,8 @@ CREATE TABLE users(
 	current_account_balance DECIMAL(15, 2),
 	phonenumber VARCHAR(13) NOT NULL,
 	member_since DATE NOT NULL,
+	last_login_time DATETIME NOT NULL,
+	customer_history TEXT, 
 	UNIQUE(username),
 	PRIMARY KEY (id)
 );
